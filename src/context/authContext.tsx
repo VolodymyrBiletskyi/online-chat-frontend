@@ -69,7 +69,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setAuthUserName("");
     } catch (error) {
       console.error("Failed to register:", error);
-      setAuthErrorMessage("Failed to create user");
+      setAuthErrorMessage("Failed to create user or user already exists");
     }
   };
 
